@@ -73,5 +73,5 @@ function GetWeaponName(weaponModel)
 end
 
 function GetCrosshairTypeForThisWeapon(weaponName)
-    return Config.UseCrosshairOnWeaponsCategories[weaponName] or false
+    return Config.UseCrosshairOnWeaponCategories[weaponName] or false
 end
