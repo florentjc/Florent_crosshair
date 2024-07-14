@@ -1,0 +1,93 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;  /* Assurez-vous que le corps et le html prennent toute la hauteur */
+}
+
+.crosshair-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.crosshair-box {
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.crosshair-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.side-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(50% - 50vh);
+    background-color: black;
+}
+
+.side-background.left {
+    left: 0;
+}
+
+.side-background.right {
+    right: 0;
+}
+
+.centered-point .point {
+    position: absolute;
+    width: 0.25vh;
+    height: 0.25vh;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered-big-point .big-point {
+    position: absolute;
+    width: 5.0vh;
+    height: 5.0vh;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+}
+
+.centered-big-point .big-point::after {
+    content: '';
+    position: absolute;
+    width: 0.25vh;
+    height: 0.25vh;
+    border-radius: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes ShowCrosshair {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes HideCrosshair {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
