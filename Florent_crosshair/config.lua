@@ -1,5 +1,5 @@
 Config = {
-    ForceDisplayCarRadio = true,
+    ForceDisplayCarRadio = true, -- Enable this if your car radio is disabled in your server
     UseHtmlCrosshair = true,
     UseCrosshairOnWeaponCategories = { -- false | "bigpoint" | "point" | "scope"
         ["WEAPON_UNARMED"] = false,
