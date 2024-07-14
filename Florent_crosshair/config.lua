@@ -1,7 +1,7 @@
 Config = {
     ForceDisplayCarRadio = true,
     UseHtmlCrosshair = true,
-    UseCrosshairOnWeaponsCategories = { -- false | "bigpoint" | "point" | "scope"
+    UseCrosshairOnWeaponCategories = { -- false | "bigpoint" | "point" | "scope"
         ["WEAPON_UNARMED"] = false,
         ["WEAPON_PISTOL"] = "point",
         ["WEAPON_STUNGUN"] = "point",
